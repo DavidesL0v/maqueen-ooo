@@ -5,9 +5,6 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.B, function () {
     music.playMelody("C5 B A G F E D C ", 500)
-    if (true) {
-        basic.showNumber(0)
-    }
     DFRobotMaqueenPlusV2.controlMotorStop(MyEnumMotor.eAllMotor)
 })
 for (let index = 0; index < 10; index++) {
