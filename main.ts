@@ -1,13 +1,14 @@
 input.onButtonPressed(Button.A, function () {
-    music.playMelody("B A F E G D F B ", 300)
+    music.playMelody("C D E F G A B C5 ", 500)
     DFRobotMaqueenPlusV2.controlMotor(MyEnumMotor.eAllMotor, MyEnumDir.eBackward, 100)
     basic.showIcon(IconNames.Happy)
 })
 input.onButtonPressed(Button.B, function () {
-	
+    music.playMelody("C5 B A G F E D C ", 500)
+    DFRobotMaqueenPlusV2.controlMotorStop(MyEnumMotor.eAllMotor)
 })
 for (let index = 0; index < 10; index++) {
-    basic.showString("PRESS A ")
+    basic.showString("PRESS A")
     basic.showArrow(ArrowNames.West)
 }
 basic.forever(function () {
